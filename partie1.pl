@@ -23,4 +23,4 @@ longueur([_ | Queue], N) :- longueur(Queue, M), N is M + 1.
 present(X, [X | _]).
 present(X, [_ | Q]) :- present(X, Q), !.
 oncletante(X, Y) :- frereetsoeur(X, Z), parent(Z, Y).
-cousin(X, Y) :- parent(Z, X,), frereetsoeur(Z, W), parent(W, Y)
+cousin(X, Y) :- parent(Z, X,), frereetsoeur(Z, W), parent(W, Y).
