@@ -1,0 +1,37 @@
+% Requêtes
+
+# Lire le fichier
+?- consult('partie1.pl').
+
+# Vérifie si il est le père
+?- pere('jacques','marc').
+
+# Enfant de marc
+?- parent('marc',X).
+
+# Avec variable
+?- homme(X).
+
+# Tous les parents de Sophie
+?- parent(X, 'Sophie').
+
+# Declarer une liste
+?- L = ['pierre','marie','paul','sophie']
+
+# Tete quete
+?- [Tête | Queue] = ['pierre','marie','paul']
+
+# Test longueur
+?- longueur(['pierre','marie','paul'], N)
+
+# Test presence
+?- present('marie', ['pierre', 'marie', 'paul', 'sophie']).
+
+# Test Oncle marc paul
+?- oncletante('marc', 'paul').
+
+# Oncle de sophie
+?- oncletante(X, 'sophie').
+
+# Cousin de paul
+?- cousin('paul', Y)
